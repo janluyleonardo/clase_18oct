@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title><marquee>Sistema de Ingreso</marquee></title>
+  <meta charset="UTF-8">
+  <link rel="StyleSheet" href="estilos.css" type="text/css">	
+</head>
+<body>
+
+</br>
+<h1><center>SISTEMA DE INGRESO</center></h1>
+<br>
+<table position="center">
+<div>
+
+<script>
+function mostrar()
+{
+  var nombre=document.getElementById('nombre').value;
+  var edad=document.getElementById('edad').value;
+  alert('Ingresó el nombre:' + nombre);
+  alert('Y la edad:' + edad);
+}
+</script>
+
+<center><form>
+  Ingrese su Nombre Completo:&emsp;
+  <input type="text" id="NombreCompleto"></br>
+  </br>
+  Ingrese su Documento:&emsp;
+  <input type="text" id="Documento"><br>
+  </br>
+  <script>
+function Edad()
+{
+  var seleccion=document.getElementById('select1');
+  document.getElementById('text1').value=seleccion.selectedIndex;
+  document.getElementById('text2').value=seleccion.options[seleccion.selectedIndex].text;
+  document.getElementById('text3').value=seleccion.options[seleccion.selectedIndex].value;
+}
+</script>
+ingrese su edad:&emsp;
+  <select id="select1" onChange="Edad()">
+    <option value="ff0000">10 - 20 AÑos</option>
+    <option value="00ff00">21 - 30 Años</option>
+    <option value="0000ff">31 - 40 Años</option>
+  </select>
+  <br>
+  </br>
+ 
+  Ingrese su Carrera:&emsp;
+  <input type="text" id="Carrera"><br>
+  </br>
+  <script>
+  function mostrarSeleccionado()
+  {
+    if (document.getElementById('radio1').checked)
+    {
+      alert('Genero Masculino');
+    }
+    if (document.getElementById('radio2').checked)
+    {
+      alert('Genero Femenino');
+    }
+    
+  }
+</script>
+
+<form>
+Genero:&emsp;
+  <input type="radio" id="radio1" name="Genero">Masculino&emsp;
+  
+  <input type="radio" id="radio2" name="Genero">Femenino</br>
+  </br>
+  Ingrese su Estado Civil:&emsp;
+  <input type="text" id="Estadocivil"></br>
+  </br>
+  Ingrese su Correo Electronico:&emsp;
+  <input type="text" id="CorreoElectronico"></br>
+  </br>
+  Ingrese su Telefono:&emsp;
+  <input type="text" id="Telefono"></br>
+  </br>
+  <input type="button" value="Mostrar" onClick="mostrarSeleccionado()">
+  
+</form>
+  
+</form>
+</center>
+</div>
+</table>
+</body>
+</html>

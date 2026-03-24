@@ -1,0 +1,129 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	
+} 
+
+body{background-color:#00000
+
+}
+h1{
+	font-family:verdana;
+	font-size:50px;
+	font-style:italic;
+	font-weight:bold;
+	text-align:center;
+	text-decoration:underline;
+}
+h2{
+	font-family:verdana;
+	font-size:25px;
+	font-style:italic;
+	font-weight:bold;
+	text-align:center;
+}
+h4{
+	font-family:verdana;
+	font-size:15px;
+	font-style:italic;
+	font-weight:bold;
+	text-align:center;
+}
+h7{
+	font-family:verdana;
+	font-size:20px;
+	font-style:italic;
+	text-align:center;
+	
+}
+.navegacion{
+		width: 1500px;
+		margin: 30px auto;
+		background: #fff;
+	    text-align: center;
+      
+}
+.navegacion ul{
+	list-style: fixed;
+	
+}
+.menu > li{
+	position: center; 
+	display: inline-block;
+	
+	
+}
+.menu > li a{
+	display: block;
+	padding:25px 35px;
+	color: #000000;
+	font-family: "arial-black";
+	text-decoration: none;
+
+}
+.menu > li a:hover{
+	color: red;
+
+}
+ul.Menu{
+	color:white;
+}
+/* submenu*/
+
+.submenu{
+	position: absolute;
+	background: gray;
+	display: none;
+}
+.submenu li a{
+	display: block;
+	padding: 15px;
+	color: #060607;
+	font-family: verdana;
+	text-decoration: none;
+	
+}
+
+
+.menu li:hover .submenu{
+	display:block;
+	
+	
+}
+div{
+	position:50%;
+	background-color: #A9F5F2;	
+	position:relative;
+}
+div.footer{
+	background-color:red;
+	
+}
+div.footer a:hover{
+	background-color:white;
+	
+}
+
+
+#color1{
+	color:white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

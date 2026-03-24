@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejemplo de JavaScript</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+<script>
+function controlarCaracteres()
+{
+  if (document.getElementById('curriculum').value.length>2000)
+  {
+    alert('curriculum muy largo');
+  }
+  else
+  {
+    alert('datos correctos');
+  }
+}
+</script>
+
+<form>
+  <textarea id="curriculum" rows="10" cols="50" ></textarea>
+  <br>
+  <input type="button" value="Mostrar" onClick="controlarCaracteres()">
+</form>
+</body>
+</html>
