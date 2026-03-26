@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HASH TECHIE OFFICIAL</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container"></div>
+        <div class="button">Click me
+            <div class="blobs">
+                <div class="blob">
+                    <div class="splash"></div>
+                    <div class="splash"></div>
+                </div>
+                <div class="blob">
+                    <div class="splash"></div>
+                    <div class="splash"></div>
+                    <div class="splash"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <defs>
+            <filter id="goo">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="7 7" result="blur"></feGaussianBlur>
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo"></feColorMatrix>
+                <feComposite in="SourceGraphic" in2="goo"></feComposite>
+            </filter>
+        </defs>
+    </svg>
+
+    <script src="btn.js"></script>
+</body>
+</html>
